@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  'Roboto', sans-serif;
+}
+
+html,body{
+    height: 100%;
+}
+
+.clear{
+    clear: both;
+}
+
+.container{
+    max-width: 960px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+section.header-master{
+    width: 100%;
+    padding: 30px 0;
+    min-height: 700px;
+    background-image: url("../imagens/bg_01.png");
+    background-size: cover;
+}
+
+section.header-master header{
+    padding-bottom: 20px;
+    border-bottom: 3px solid rgba(71, 83, 88, 0.14);
+}
+
+div.logo{
+    float: left;
+    width: 166px;
+    height: 64px;
+    background-image: url("../imagens/logo.png");
+    background-size: 100% 100%;
+}
+
+header nav{
+    float: left;
+    padding-left: 60px;
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav li{
+    position: relative;
+    padding: 0 15px;
+    display: inline-block;
+    font-size: 16px;
+    color: white;
+}
+
+li.selected > span{
+    position: absolute;
+    bottom: 0;
+    width: 40px;
+    height: 3px;
+    background-color: #509d87;
+}
+
+li.selected{
+    color: #509d87 !important;
+}
+
+header li a{
+    color: inherit;
+    text-decoration: none;
+}
+
+div.telefone-header{
+    float: left;
+    position: relative;
+    top: -8px;
+}
+
+div.telefone-header span{
+    font-size: 27px;
+    color: white;
+    padding-left: 27px;
+}
