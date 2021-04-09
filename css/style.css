@@ -77,11 +77,200 @@ header li a{
 div.telefone-header{
     float: left;
     position: relative;
-    top: -8px;
+    top: -3px;
 }
 
 div.telefone-header span{
-    font-size: 27px;
+    font-size: 22px;
     color: white;
     padding-left: 27px;
+}
+
+.content-header{
+    padding: 60px 0;
+}
+
+.content-header .one{
+    float: left;
+    width: 50%;
+}
+
+.content-header .one h2{
+    color: #509d87;
+    font-weight: normal;
+    font-size: 37px;
+}
+
+.content-header .one p{
+    padding: 10px 0;
+}
+
+.content-header .one form input{
+    display: inline-block;
+}
+
+.content-header .one form input[type=email]{
+    width: 251px;
+    height: 40px;
+    border: 2px solid #ccc;
+    padding-left: 15px;
+    border-radius: 15px;
+    outline: none;
+}
+
+.content-header .one form input[type=submit]{
+    background-color: #00daaa;
+    color: white;
+    cursor: pointer;
+    border: none;
+    height: 40px;
+    padding: 0 30px;
+    border-radius: 30px;
+    font-size: 14px;
+    margin-left: 15px;
+    margin-top: 15px;
+
+}
+
+.content-header .one span{
+    color: #509d87;
+    font-size: 13px;
+    margin-top: 20px;
+    display: block;
+}
+
+.content-header .two{
+    float: left;
+    width: 50%;
+    padding: 0 30px;
+}
+
+.content-header .two img{
+    float: left;
+    width: 50%;
+    border: 10px solid rgba(0, 0, 0, 0);
+}
+
+section.diferenciais{
+   padding: 40px 0;
+    /*margin-top: 20px;*/
+}
+
+section.diferenciais > .container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.diferenciais-single{
+    padding: 10px;
+    width: 33.3%;
+    margin-bottom: 30px;
+}
+
+.diferenciais-single img{
+    height: 60px;
+}
+
+.diferenciais-single h2{
+    padding-bottom: 20px;
+    font-size: 20px;
+    color: black;
+}
+
+.diferenciais-single h2 > b{
+    color: #7dd5b0;
+}
+
+.diferenciais-single p{
+    color: #2d2d2d;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.sobre > .container{
+    max-width: 1280px;
+}
+
+.sobre-container{
+    float: left;
+    width: 50%;
+}
+
+.sobre-container img{
+    max-width: 100%;
+}
+
+.sobre-container h2{
+    font-size: 26px;
+    margin: 10px 0;
+    color: #a9c4b8;
+    font-weight: normal;
+}
+
+.sobre-container h2 > b{
+    color: #03ca9f;
+}
+
+.sobre-container p{
+    max-width: 80%;
+    color: black;
+}
+
+.sobre-container:nth-of-type(2){
+    padding: 0 20px;
+}
+
+section.depoimento{
+    padding-top: 200px;
+    padding-bottom: 300px;
+    background-image: url("../imagens/bg_02.png");
+    background-size: cover;
+    text-align: center;
+    color: #2d2d2d;
+
+}
+
+section.depoimento h2{
+    font-size: 29px;
+    font-weight: normal;
+}
+
+section.depoimento p{
+    font-size: 15px;
+}
+
+
+
+@media screen and (max-width: 900px) {
+    .content-header .one {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .content-header .two{
+        display: none;
+    }
+
+    .telefone-header{
+        display: none;
+    }
+
+    nav.desktop{
+        display: none;
+    }
+
+    section.header-master{
+        min-height: 400px;
+    }
+
+    .diferenciais-single{
+        width: 100%;
+        text-align: center;
+    }
+
+    .sobre-container{
+        float: none;
+        width: 100%;
+    }
 }
