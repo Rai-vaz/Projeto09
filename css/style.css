@@ -194,6 +194,12 @@ section.diferenciais > .container{
 .sobre-container{
     float: left;
     width: 50%;
+    
+}
+
+.sobre-container:nth-of-type(2){
+    position: relative;
+    z-index: 99;
 }
 
 .sobre-container img{
@@ -227,6 +233,8 @@ section.depoimento{
     background-size: cover;
     text-align: center;
     color: #2d2d2d;
+    position: relative;
+    top: -105px;
 
 }
 
@@ -239,6 +247,241 @@ section.depoimento p{
     font-size: 15px;
 }
 
+section.etapas{
+    padding: 40px 2%;
+}
+
+
+section.etapas > .container{
+    max-width: 1300px;
+}
+
+section.etapas h2{
+    text-align: center;
+}
+
+section.etapas .etapas__one{
+    float: left;
+    width: 50%;
+}
+
+section.etapas .etapas__single{
+    float: right;
+    width: 50%;
+}
+section.etapas .etapas__group p#title-photo{
+    float: left;
+    margin: 130px 20px;
+    color: #509d87;
+
+}
+
+section.etapas .etepas__group img{
+    width: 50%;
+}
+
+.etapas__group2{
+    margin-bottom: 40px;
+    padding: 0 30px;
+}
+
+.etapas__group2 .circle{
+    width: 100px;
+    height: 100px;
+    float: left;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    position: relative;
+}
+
+.circle span{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font-weight: bold;
+    font-size: 35px;
+    color: #03ca9f;
+}
+
+.etapas__descricao{
+    float: left;
+    width: calc(100% - 100px);
+    padding: 0 20px;
+}
+
+.line{
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 40px;
+    width: 1px;
+    background-color: black;
+}
+
+.etapas__descricao h3{
+    color: #03ca9f;
+    font-size: 18px;
+}
+
+.etapas__descricao p{
+    color: #2d2d2d;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+section.diferencas{
+    padding: 50px 0;
+}
+
+section.diferencas > .container{
+    max-width: 800px;
+    text-align: center;
+}
+
+.diferencas__single{
+    float: left;
+    width: 50%;
+}
+
+.diferencas__single h2,
+.item-diferencas-1 span{
+    color: #a9c4b8;
+}
+
+.diferencas__single h2{
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.item-diferencas-1{
+    display: inline-block;
+    margin-top: 10px;
+    position: relative;
+}
+
+.line-diferencas-1{
+    position: absolute;
+    left: 0;
+    top: 11px;
+    width: 100%;
+    height: 3px;
+    background-color: #e89595;
+    transform: rotate(-5deg);
+}
+
+.item-diferencas-2{
+    margin-top: 10px;
+
+}
+.item-diferencas-2 span{
+    color: #7dd5b0;
+    font-weight: bold;
+    font-size: 21px;
+}
+
+section.contato{
+    padding: 40px 0;
+    background-color: #98fcde;
+
+}
+
+section.contato h2{
+    text-align: center;
+    color: #509d87;
+    font-size: 24px;
+}
+
+section.contato p{
+    font-size: 14px;
+    max-width: 440px;
+    border-bottom: 1px solid #509d87;
+    padding: 10px 0;
+    color: #509d87;
+}
+
+section.contato > .container{
+    max-width: 800px;
+}
+
+section.contato .form-group{
+    margin-top: 10px;
+}
+
+section.contato input{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+section.contato textarea{
+    width: 100%;
+    height: 120px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    resize: none;
+    outline: none;    
+}
+
+section.contato input[type=submit]{
+    width: 300px;
+    height: 50px;
+    border-radius: 100px;
+    background-color: #0ed2a7;
+    font-size: 20px;
+    color: white;
+    font-weight: normal;
+    border: none;
+}
+
+
+
+
+
+@media screen and (max-width: 1024px){
+    section.etapas .etapas__one{
+        width: 100%;
+    }
+
+    section.etapas .etapas__single{
+        width: 100%;
+    }
+
+    section.etapas > .container{
+        max-width: 700px;
+    }
+
+    section.etapas .etapas__group img{
+       max-width: 100%;
+       float: none;
+       display: block;
+       margin: 0 auto;        
+    }
+
+   section.etapas img:nth-of-type(1){
+       margin-top: 50px;
+   }
+
+   section.etapas{
+       padding: 0;
+   }
+
+    .etapas__group2 p{
+        width: 100%;
+        text-align: center;
+        display: block;
+        float: none;
+        padding-left: 0;
+        padding-top: 10px;
+    }
+}
 
 
 @media screen and (max-width: 900px) {
@@ -272,5 +515,30 @@ section.depoimento p{
     .sobre-container{
         float: none;
         width: 100%;
+    }
+
+    .sobre-container{
+        width: 100%;
+    }
+
+    section.depoimento{
+        position: relative;
+        top: 0;
+    
+    }
+
+    section.etapas .etapas__group p#title-photo{
+        margin: 10px 20px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .diferencas__single:nth-of-type(1){
+        border-right: none !important;
+    }
+    .diferencas__single{
+        float: none;
+        width: 100%;
+        margin-bottom: 40px;
     }
 }
